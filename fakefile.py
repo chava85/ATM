@@ -33,6 +33,7 @@ def generate_accounts(max_n):
 	db.session.commit()
 
 def generate_names():
+	
 	fake = Faker()
 	accounts = Account.query.all()
 	for account in accounts:
